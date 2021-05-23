@@ -1394,7 +1394,7 @@
     #define ABL_BILINEAR_SUBDIVISION // LT* comm
     #if ENABLED(ABL_BILINEAR_SUBDIVISION)
       // Number of subdivisions between probe points
-      #define BILINEAR_SUBDIVISIONS 3
+      #define BILINEAR_SUBDIVISIONS 1 // LT* 3
     #endif
 
   #endif
