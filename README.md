@@ -8,7 +8,8 @@
 <img align="right" width=175 src="buildroot/share/pixmaps/logo/marlin-250.png" />
 
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
-Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
+
+This firmware was modified to use with SKR1.3, TMC2208 steppers, Antclabs BLTouch 3.1, dual Z-axis endstops, additional PWM mosfet for controller fan.
 
 ## Marlin 2.0 Bugfix Branch
 
