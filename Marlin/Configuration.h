@@ -492,9 +492,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp 15.85 // LT* 22.20
-    #define DEFAULT_Ki 1.01 // LT* 1.08
-    #define DEFAULT_Kd 62.07 // LT* 114.00
+    #define DEFAULT_Kp 14.48 // LT* 22.20
+    #define DEFAULT_Ki 0.85 // LT* 1.08
+    #define DEFAULT_Kd 61.55 // LT* 114.00
   #endif
 #endif // PIDTEMP
 
@@ -534,9 +534,9 @@
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
 
-  #define DEFAULT_bedKp 99.22 // LT* 10.00
-  #define DEFAULT_bedKi 10.07 // LT* .023
-  #define DEFAULT_bedKd 651.90 // LT* 305.4
+  #define DEFAULT_bedKp 185.64 // LT* 10.00
+  #define DEFAULT_bedKi 36.62 // LT* .023
+  #define DEFAULT_bedKd 627.47 // LT* 305.4
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -737,7 +737,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 841 } // LT* { 80, 80, 400, 500 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 817 } // LT* { 80, 80, 400, 500 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -992,7 +992,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 45, 19, 0 } // LT* { 10, 10, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { 45, 19, -4 } // LT* { 10, 10, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1394,7 +1394,7 @@
     #define ABL_BILINEAR_SUBDIVISION // LT* comm
     #if ENABLED(ABL_BILINEAR_SUBDIVISION)
       // Number of subdivisions between probe points
-      #define BILINEAR_SUBDIVISIONS 1 // LT* 3
+      #define BILINEAR_SUBDIVISIONS 2 // LT* 3
     #endif
 
   #endif
