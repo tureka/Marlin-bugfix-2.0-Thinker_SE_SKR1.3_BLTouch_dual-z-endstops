@@ -515,7 +515,7 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-#define PIDTEMPBED // LT* comm
+//#define PIDTEMPBED // LT* comm
 
 //#define BED_LIMIT_SWITCHING
 
